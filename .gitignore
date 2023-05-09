@@ -15,3 +15,6 @@
 .DS_Store
 
 .prettierignore
+
+fem-README-template.md
+fem-README.md
