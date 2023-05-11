@@ -1,3 +1,7 @@
+/****** DEFAULT/MOBILE STYLES ******/
+
+/* _____ GLOBAL _____ */
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -24,6 +28,8 @@ h2,
 h3 {
   margin-top: 0;
 }
+
+/* _____ CARD _____ */
 
 .card {
   background: #fff;
@@ -60,6 +66,8 @@ h3 {
   padding-top: 7rem;
 }
 
+/* _____ ACCORDION _____ */
+
 .accordion__item {
   padding-top: 1rem;
   border-bottom: 1px solid var(--divider-blue);
@@ -77,28 +85,39 @@ h3 {
   border: none;
   background: transparent;
   margin-bottom: 1rem;
-  padding: 0;
+  padding: 0.2rem;
   font-family: 'Kumbh Sans', sans-serif;
   font-size: 0.875rem;
   text-align: left;
 }
-
-.accordion__question.open {
-  font-weight: 700;
-}
-
 
 .accordion__question::after {
   content: '';
   display: block;
   width: 0.625rem;
   height: 1rem;
+  border: none;
   background-image: url(/images/icon-arrow-down.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+  transition: transform 300ms ease-in-out;
 }
 
+
+.accordion__question:focus,
+.accordion__question:focus-visible {
+  border: none;
+  outline: dashed 1px hsl(240, 6%, 77%);
+}
+
+.accordion__question.open {
+  font-weight: 700;
+}
+
+.accordion__question.open::after {
+  transform: rotate(180deg);
+}
 
 .accordion__content {
   margin-bottom: 1rem;
@@ -108,14 +127,25 @@ h3 {
 
 
 
-/****** DESKTOP ******/
+.accordion__collapse.collapse {
+  display: none;
+}
+
+.accordion__collapse.collapsing {}
+
+
+
+/****** DESKTOP STYLES ******/
 
 @media (min-width: 56em) {
   /*900px*/
+  /* ### DT-GLOBAL ### */
 
   body {
     padding: 5rem;
   }
+
+  /* ### DT-CARD ### */
 
   .card {
     position: relative;
@@ -158,4 +188,7 @@ h3 {
   .card__text {
     padding-top: 0;
   }
+
+  /* ###  DT-ACCORDION ### */
+
 }
