@@ -97,7 +97,7 @@ h3 {
   width: 0.625rem;
   height: 1rem;
   border: none;
-  background-image: url(/images/icon-arrow-down.svg);
+  background-image: url('images/icon-arrow-down.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
