@@ -127,11 +127,21 @@ h3 {
 
 
 
+
 .accordion__collapse.collapse {
   display: none;
 }
 
-.accordion__collapse.collapsing {}
+.accordion__collapse.collapsing {
+/* height: 0;
+  overflow: hidden;
+  transition: height .35s ease; */
+}
+
+.accordion__collapse.open {
+  display: block;
+}
+
 
 
 
