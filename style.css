@@ -104,7 +104,6 @@ h3 {
   transition: transform 300ms ease-in-out;
 }
 
-
 .accordion__question:focus,
 .accordion__question:focus-visible {
   border: none;
@@ -120,22 +119,24 @@ h3 {
 }
 
 .accordion__content {
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   font-size: 0.75rem;
   line-height: 1.4;
 }
 
 
-
+.accordion__collapse {
+  transition: height 300ms ease;
+}
 
 .accordion__collapse.collapse {
   display: none;
 }
 
 .accordion__collapse.collapsing {
-/* height: 0;
+  height: 0;
   overflow: hidden;
-  transition: height .35s ease; */
+  transition: height .35s ease;
 }
 
 .accordion__collapse.open {
