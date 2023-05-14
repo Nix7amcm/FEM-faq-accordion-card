@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Frontend Mentor | FAQ Accordion Card</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="colors.css">
-
-  <script src="script.js" defer></script>
-
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="colors.css">
+  
+    <script src="script.js" defer></script>
+  
+    <style>
+      .attribution { font-size: 11px; text-align: center; }
+      .attribution a { color: hsl(0, 0%, 100%); }
+    </style>
+  </head>
 
 
   <body>
 
 
-    <section class="card">
+    <main class="card">
 
-      <img
-        src="images/illustration-box-desktop.svg"
-        alt="card box"
-        class="card__box"
-      >
+      <section class="image__container">
+
+        <div class="image__desktop">
+          <div class="card__box__wrap">
+            <img
+              src="images/illustration-box-desktop.svg"
+              alt="card box"
+              class="card__box"
+            >
+          </div>
+  
+          <div class="card__image">
+            <img
+              src="images/illustration-woman-online-desktop.svg"
+              alt="woman online desktop"
+              class="img__desktop"
+            >
+          </div>
+        </div>
+
+        <div class="image__mobile">
+          <div class="card__image">
+            <img
+              src="images/illustration-woman-online-mobile.svg"
+              alt="woman online desktop"
+              class="img__desktop"
+            >
+          </div>
+        </div>
+
+      </section>
 
 
-      <div class="card__image">
-        <img
-          src="images/illustration-woman-online-desktop.svg"
-          alt="woman online desktop"
-        >
-      </div>
-
-
-      <div class="card__text">
+      <section class="card__text">
         <h1>FAQ</h1>
 
         <div class="accordion">
@@ -111,10 +130,10 @@
         </div>
 
 
-      </div>
+      </section>
 
 
-    </section>
+    </main>
 
 
     <footer class="attribution">
@@ -130,6 +149,6 @@
       .
     </footer>
 
-    
+
   </body>
 </html>

@@ -11,22 +11,27 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   min-height: 100vh;
-  margin: 0;
   padding: 10rem 1rem;
   font-family: 'Kumbh Sans', sans-serif;
   color: var(--text-blue);
-  background-image: linear-gradient(var(--gradient-violet),
-      var(--gradient-blue));
+  background-image: linear-gradient(180deg, var(--gradient-violet) 55%,
+      var(--gradient-blue) 100%);
 }
 
 h1,
 h2,
 h3 {
   margin-top: 0;
+}
+
+h1 {
+  text-align: center;
 }
 
 /* _____ CARD _____ */
@@ -38,7 +43,7 @@ h3 {
   padding: 2.875rem 1.5rem 2.875rem 1.5rem;
   background-image: url('images/bg-pattern-mobile.svg');
   background-repeat: no-repeat;
-  background-position: center 0%;
+  background-position: center 12%;
   background-size: 15rem;
 }
 
@@ -48,6 +53,14 @@ h3 {
 
 .card__image {
   position: relative;
+}
+
+.image__desktop {
+  display: none;
+}
+
+.image__mobile {
+  display: block;
 }
 
 .card__image img {
@@ -104,6 +117,11 @@ h3 {
   transition: transform 300ms ease-in-out;
 }
 
+.accordion__question:hover {
+  cursor: pointer;
+  color: var(--text-red);
+}
+
 .accordion__question:focus,
 .accordion__question:focus-visible {
   border: none;
@@ -153,25 +171,41 @@ h3 {
     padding: 5rem;
   }
 
+  h1 {
+    text-align: left;
+  }
+
   /* ### DT-CARD ### */
 
   .card {
-    position: relative;
     display: flex;
     margin: 0 auto;
     padding: 3.93rem 6.25rem 3.93rem 0;
     background-image: url('images/bg-pattern-desktop.svg');
-    background-size: 45%;
-    background-position: -13% center;
+    background-size: 100%;
+    background-position: -35.125rem -18.75rem;
+    background-origin: inherit;
+  }
+
+  .image__desktop {
+    display: block;
+  }
+
+  .image__mobile {
+    display: none;
+  }
+
+  .card__box__wrap {
+    position: relative;
   }
 
   .card__box {
     display: block;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     top: 57%;
     left: 0;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(50%);
   }
 
   .card__image,
