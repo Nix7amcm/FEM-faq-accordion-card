@@ -20,7 +20,7 @@ body {
   padding: 10rem 1rem;
   font-family: 'Kumbh Sans', sans-serif;
   color: var(--text-blue);
-  background-image: linear-gradient(180deg, var(--gradient-violet) 55%,
+  background-image: linear-gradient(180deg, var(--gradient-violet) 20%,
       var(--gradient-blue) 100%);
 }
 

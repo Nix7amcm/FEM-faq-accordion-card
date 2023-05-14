@@ -18,7 +18,7 @@ This is my solution to the [FAQ accordion card challenge on Frontend Mentor](htt
 
 ⚡ This challenge was to build a responsive FAQ card, using HTML and CSS, with accordion interactivity applied to make the questions drop down on click, using JS.
 
-🚀 I built this while following [@TheCoderCoder](https://www.youtube.com/channel/UCzNf0liwUzMN6_pixbQlMhQ)'s free live code video on YouTube. Check it out here: [Part 1](https://www.youtube.com/watch?v=FboXxLxg8eo), [Part 2](https://www.youtube.com/watch?v=sr94O6Y5NEA).
+🚀 I built this while following [@TheCoderCoder](https://www.youtube.com/channel/UCzNf0liwUzMN6_pixbQlMhQ)'s free live code video on YouTube. Check it out here: [Part 1](https://www.youtube.com/watch?v=FboXxLxg8eo), [Part 2](https://www.youtube.com/watch?v=sr94O6Y5NEA). I noticed some differences afterwards between what was completed in the video and the design images, so I made some modifications, as well as fixed some accessibility issues. This gave me great practice! 
 
 
 ## Screenshots
